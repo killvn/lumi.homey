@@ -1,1 +1,3 @@
-# lumi.homey
+# Lumi control
+
+Control Lumi

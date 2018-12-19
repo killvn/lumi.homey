@@ -1,0 +1,390 @@
+{
+	"id": "homey.lumi",
+	"version": "1.0.0",
+	"compatibility": ">=1.5.0",
+	"sdk": 2,
+	"name": {
+		"en": "Lumi control"
+	},
+	"description": {
+		"en": "Control Lumi"
+	},
+	"category": [
+		"lights"
+	],
+	"permissions": [],
+	"images": {
+		"large": "/assets/images/large.png",
+		"small": "/assets/images/small.png"
+	},
+	"author": {
+		"name": "Test",
+		"email": "Test@Test.com"
+	},
+	"flow": {
+		"triggers": [
+			{
+				"id": "trigger_switch_1_on",
+				"title": {
+					"en": "Switch 1 turned on"
+				},
+				"args": [
+					{
+						"name": "device",
+						"type": "device",
+						"filter": "driver_id=lm_sz_4"
+					}
+				]
+			},
+			{
+				"id": "trigger_switch_1_off",
+				"title": {
+					"en": "Switch 1 turned off"
+				},
+				"args": [
+					{
+						"name": "device",
+						"type": "device",
+						"filter": "driver_id=lm_sz_4"
+					}
+				]
+			},
+			{
+				"id": "trigger_switch_2_on",
+				"title": {
+					"en": "Switch 2 turned on"
+				},
+				"args": [
+					{
+						"name": "device",
+						"type": "device",
+						"filter": "driver_id=lm_sz_4"
+					}
+				]
+			},
+			{
+				"id": "trigger_switch_2_off",
+				"title": {
+					"en": "Switch 2 turned off"
+				},
+				"args": [
+					{
+						"name": "device",
+						"type": "device",
+						"filter": "driver_id=lm_sz_4"
+					}
+				]
+			},
+			{
+				"id": "trigger_switch_3_on",
+				"title": {
+					"en": "Switch 3 turned on"
+				},
+				"args": [
+					{
+						"name": "device",
+						"type": "device",
+						"filter": "driver_id=lm_sz_4"
+					}
+				]
+			},
+			{
+				"id": "trigger_switch_3_off",
+				"title": {
+					"en": "Switch 3 turned off"
+				},
+				"args": [
+					{
+						"name": "device",
+						"type": "device",
+						"filter": "driver_id=lm_sz_4"
+					}
+				]
+			},
+			{
+				"id": "trigger_switch_4_on",
+				"title": {
+					"en": "Switch 4 turned on"
+				},
+				"args": [
+					{
+						"name": "device",
+						"type": "device",
+						"filter": "driver_id=lm_sz_4"
+					}
+				]
+			},
+			{
+				"id": "trigger_switch_4_off",
+				"title": {
+					"en": "Switch 4 turned off"
+				},
+				"args": [
+					{
+						"name": "device",
+						"type": "device",
+						"filter": "driver_id=lm_sz_4"
+					}
+				]
+			}
+		],
+		"conditions": [
+			{
+				"id": "condition_switch_1",
+				"title": {
+					"en": "Switch 1 is !{{on|off}}"
+				},
+				"args": [
+					{
+						"name": "device",
+						"type": "device",
+						"filter": "driver_id=lm_sz_4"
+					}
+				]
+			},
+			{
+				"id": "condition_switch_2",
+				"title": {
+					"en": "Switch 2 is !{{on|off}}"
+				},
+				"args": [
+					{
+						"name": "device",
+						"type": "device",
+						"filter": "driver_id=lm_sz_4"
+					}
+				]
+			},
+			{
+				"id": "condition_switch_3",
+				"title": {
+					"en": "Switch 3 is !{{on|off}}"
+				},
+				"args": [
+					{
+						"name": "device",
+						"type": "device",
+						"filter": "driver_id=lm_sz_4"
+					}
+				]
+			},
+			{
+				"id": "condition_switch_4",
+				"title": {
+					"en": "Switch 4 is !{{on|off}}"
+				},
+				"args": [
+					{
+						"name": "device",
+						"type": "device",
+						"filter": "driver_id=lm_sz_4"
+					}
+				]
+			}
+		],
+		"actions": [
+			{
+				"id": "action_switch_1_on",
+				"title": {
+					"en": "Turn on switch 1"
+				},
+				"args": [
+					{
+						"type": "device",
+						"name": "device",
+						"filter": "driver_id=lm_sz_4"
+					}
+				]
+			},
+			{
+				"id": "action_switch_1_off",
+				"title": {
+					"en": "Turn off switch 1"
+				},
+				"args": [
+					{
+						"type": "device",
+						"name": "device",
+						"filter": "driver_id=lm_sz_4"
+					}
+				]
+			},
+			{
+				"id": "action_switch_2_on",
+				"title": {
+					"en": "Turn on switch 2"
+				},
+				"args": [
+					{
+						"type": "device",
+						"name": "device",
+						"filter": "driver_id=lm_sz_4"
+					}
+				]
+			},
+			{
+				"id": "action_switch_2_off",
+				"title": {
+					"en": "Turn off switch 2"
+				},
+				"args": [
+					{
+						"type": "device",
+						"name": "device",
+						"filter": "driver_id=lm_sz_4"
+					}
+				]
+			},
+			{
+				"id": "action_switch_3_on",
+				"title": {
+					"en": "Turn on switch 3"
+				},
+				"args": [
+					{
+						"type": "device",
+						"name": "device",
+						"filter": "driver_id=lm_sz_4"
+					}
+				]
+			},
+			{
+				"id": "action_switch_3_off",
+				"title": {
+					"en": "Turn off switch 3"
+				},
+				"args": [
+					{
+						"type": "device",
+						"name": "device",
+						"filter": "driver_id=lm_sz_4"
+					}
+				]
+			},
+			{
+				"id": "action_switch_4_on",
+				"title": {
+					"en": "Turn on switch 4"
+				},
+				"args": [
+					{
+						"type": "device",
+						"name": "device",
+						"filter": "driver_id=lm_sz_4"
+					}
+				]
+			},
+			{
+				"id": "action_switch_4_off",
+				"title": {
+					"en": "Turn off switch 4"
+				},
+				"args": [
+					{
+						"type": "device",
+						"name": "device",
+						"filter": "driver_id=lm_sz_4"
+					}
+				]
+			}
+		]
+	},
+	"drivers": [
+		{
+			"id": "lm_sz_4",
+			"name": {
+				"en": "Wall Switch - 4 Buttons"
+			},
+			"class": "light",
+			"capabilities": [
+				"onoff.1",
+				"onoff.2",
+				"onoff.3",
+				"onoff.4"
+			],
+			"capabilitiesOptions": {
+				"onoff.1": {
+					"title": {
+						"en": "Switch 1"
+					}
+				},
+				"onoff.2": {
+					"title": {
+						"en": "Switch 2"
+					}
+				},
+				"onoff.3": {
+					"title": {
+						"en": "Switch 3"
+					}
+				},
+				"onoff.4": {
+					"title": {
+						"en": "Switch 4"
+					}
+				}
+			},
+			"mobile": {
+				"components": [
+					{
+						"id": "icon",
+						"capabilities": []
+					},
+					{
+						"id": "toggle",
+						"capabilities": [
+							"onoff.1"
+						],
+						"options": {
+							"showTitle": true
+						}
+					},
+					{
+						"id": "toggle",
+						"capabilities": [
+							"onoff.2"
+						],
+						"options": {
+							"showTitle": true
+						}
+					},
+					{
+						"id": "toggle",
+						"capabilities": [
+							"onoff.3"
+						],
+						"options": {
+							"showTitle": true
+						}
+					},
+					{
+						"id": "toggle",
+						"capabilities": [
+							"onoff.4"
+						],
+						"options": {
+							"showTitle": true
+						}
+					}
+				]
+			},
+			"zigbee": {
+				"manufacturerName": "Lumi",
+				"productId": "LM-SZ4",
+				"deviceId": [
+					256
+				],
+				"profileId": 260,
+				"learnmode": {
+					"instruction": {
+						"en": "Press and hold any switch button until the light change to pink then release"
+					}
+				}
+			},
+			"images": {
+				"large": "/drivers/lm_sz_4/assets/images/large.png",
+				"small": "/drivers/lm_sz_4/assets/images/small.png"
+			}
+		}
+	]
+}
