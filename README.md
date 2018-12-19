@@ -1,3 +1,3 @@
-# Lumi control
+# Lumi Zigbee
 
-Control Lumi
+Lumi Devices
